@@ -2,33 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply bg-slate-50 text-slate-900 antialiased min-h-screen font-sans;
-  }
-}
-
-.glass-card {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(226, 232, 240, 0.8);
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
-}
-
-.custom-scrollbar::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: #f1f5f9;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
-}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#F9F8F7;color:#2C2C2B;font-family:Arial,system-ui,sans-serif;font-size:16px;line-height:1.5}button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{outline:2px solid #2783DE;outline-offset:2px}@layer components{.btn-primary{@apply inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white transition hover:bg-[#176FBE] disabled:cursor-not-allowed disabled:opacity-50}.btn-secondary{@apply inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-line bg-white px-4 py-2 text-sm font-medium text-ink transition hover:bg-[#F9F8F7] disabled:opacity-50}.tab{@apply inline-flex min-h-11 items-center gap-2 border-b-2 border-transparent px-4 py-3 text-sm text-muted}.tab-active{@apply border-accent text-accent}.field{@apply min-h-11 w-full rounded-lg border border-line bg-white px-3 py-2 outline-none focus:border-accent}.field-label{@apply grid gap-2 text-sm font-medium}.modal-backdrop{@apply fixed inset-0 z-50 grid place-items-center bg-black/40 p-4}.modal-card{@apply grid w-full max-w-md gap-5 rounded-xl bg-white p-6 shadow-xl}.icon-btn{@apply mr-1 inline-grid h-10 w-10 place-items-center rounded-lg text-muted hover:bg-[#F0EFED]}.icon-btn svg{@apply h-4 w-4}}
